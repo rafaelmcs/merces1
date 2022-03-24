@@ -1,0 +1,65 @@
+class Endereço; {
+
+    rua ; estado ; cidade
+
+
+        construtor ( pRua ,  pEstdo, p cidade ) 
+        {
+
+}
+
+class endereço {
+    nome ;
+    dataDeNasc ;
+    cpf ;
+
+    constructor ( pNome , pDataDeNasc ,  pCpf , pCidade ,  pRua ,  pEstado  ) {
+        
+        isso . nome  =  pNome ;
+        isso . cpf  =  pCpf ;
+        isso . dataDeNasc  =  pDataDeNasc ;
+        }
+
+        imprimir ( ) {
+            return  "Nome:"  +  this . nome  +
+                   "\n CPF: "  +  this . cpf  +
+                   "\n DataDeNasc: "  +  this . dataDeNasc  +
+                   "\n Rua: "  +  isso . rua  +
+                   "\n Cidade: "  +  isso . cidade  +
+                   "\n Estado: "  +  isso . estado  +
+        }
+}
+
+    consola . log ( "\nPessoa Física: " )
+    var  pf  =  new  ( "carl"  ,  "000.000.000-00"  ,  "01/02/2001"  ,  "jhonson"  ,  "sao Paulo"  ,  "sp"  ,  "68904-680"  ,  "Brasil "
+    consola . log ( pf . imprimir (  )
+
+    consola . log ( "*******************" )
+
+    classe  Juridica  estende  Endereço {
+       nome ;
+       cnpj ;
+       razaoSocial ;
+
+       construtor ( pNome ,  pCnpj ,  pRazaoSocial ,  pRua ,  pCidade ,  pEstado ,  pCep ,  pPais ) {
+           super ( pRua ,  pCidade ,  pEstado ,  pCep ,  pPais )
+           isso . nome  =  pNome ;
+           isso . cnpj  =  pCnpj ;
+           isso . razaoSocial  =  pRazaoSocial ;
+       }
+
+       imprimir ( ) {
+        return  "Nome:"  +  this . nome  +
+               "\n CNPJ: "  +  this . cnpj  +
+               "\n RazãoSocial: "  +  this . razaoSocial  +
+               "\n Rua: "  +  isso . rua  +
+               "\n Cidade: "  +  isso . cidade  +
+               "\n Estado: "  +  isso . estado  +
+               "\n Cep: "  +  this . cep  +
+               "\n País: "  +  this . pais ; 
+    }
+
+    }
+    consola . log ( "\nPessoa Jurídica:" )
+    var  pj  =  new  Juridica  ( "carl"  ,  "45.646.031/0052-01" ,  "jhonson"  ,  "São Paulo"  ,  "SP"  ,  "68904-680"  ,  "Brasil "
+    consola . log ( pj . imprimir (  )
